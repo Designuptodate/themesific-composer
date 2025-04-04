@@ -2,10 +2,10 @@
     /*
     Plugin Name: Themesific Composer
     Plugin URI: https://themesific.com
-    Description: Powerful Drag and Drop Pagebuilder for WordPress Themes -- By BKNinja
+    Description: Powerful Drag and Drop Pagebuilder for WordPress Themes -- By BKNinja & Themesific
     Author: BKNinja
     Author URI: http://themesific.com
-    Version: 1.0
+    Version: 1.0.0
     Tags: right-sidebar, left-sidebar, two-columns, three-columns, drag drop modules, drag drop sections, full width section, has sidebar section
     Requires at least: 6.0
     Tested up to: 6.6
