@@ -771,3 +771,28 @@
     letter-spacing: 0.5px;
     font-weight: 500;
 }
+/** Image Options **/
+.mobile-image-options.vertical-list .mobile-layout-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mobile-image-options.vertical-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.mobile-image-options.mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.mobile-layout-modal-content h4 {
+  margin-top: 20px;
+}
+.mobile-image-options .mobile-layout-options p {
+  margin-top: 5px;
+}

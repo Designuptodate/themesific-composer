@@ -5,7 +5,7 @@
     Description: Powerful Drag and Drop Pagebuilder for WordPress Themes -- By BKNinja & Themesific
     Author: BKNinja
     Author URI: http://themesific.com
-    Version: 1.0.0
+    Version: 1.0.1
     Tags: right-sidebar, left-sidebar, two-columns, three-columns, drag drop modules, drag drop sections, full width section, has sidebar section
     Requires at least: 6.0
     Tested up to: 6.6
@@ -93,7 +93,12 @@ if ( ! function_exists( 'bk_composer_script' ) ) {
             wp_enqueue_script( 'bootstrap-admin', THEMESIFIC_COMPOSER_URL.'bootstrap-admin/bootstrap.js', array(), '', true );
             wp_enqueue_style( 'bootstrap-admin', THEMESIFIC_COMPOSER_URL.'bootstrap-admin/bootstrap.css', array(), '' );
             wp_enqueue_script( 'bk-composer-script', THEMESIFIC_COMPOSER_URL.'controller/js/page-builder.js', array( 'jquery' ), null, true );
+            wp_enqueue_script( 'ts-option-image-selection', THEMESIFIC_COMPOSER_URL.'controller/js/option-image-selection.js', array( 'jquery' ), null, true );
             wp_localize_script( 'bk-composer-script', 'bkpb_ajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+
+            wp_localize_script('ts-option-image-selection', 'carbonData', array(
+                'templateUri' => get_template_directory_uri(),
+            ));
     	}
         wp_enqueue_script('throttle-debounce', THEMESIFIC_COMPOSER_URL . '/js/throttle-debounce.min.js', array('jquery'),false, true);
         wp_enqueue_script( 'bootstrap-datepicker', THEMESIFIC_COMPOSER_URL.'/js/bootstrap-datepicker.min.js', array(), '', true );
